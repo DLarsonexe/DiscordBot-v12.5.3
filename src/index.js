@@ -1,0 +1,1 @@
+const config = require('../DatabaseConf/config.json'); const { Discord, Client } = require('discord.js'); const client = new Client(); client.login(config.client.token); client.on('ready', async () => { await console.log(`Client: ${client.user.tag} has connected to the Discord API.`)});
